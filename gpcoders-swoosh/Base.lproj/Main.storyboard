@@ -137,6 +137,9 @@
                                         <state key="normal" title="Mens">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onMenTap:" destination="qa7-oC-PdD" eventType="touchUpInside" id="6XR-Sh-tvS"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2g1-VO-mTU" customClass="BorderButton" customModule="gpcoders_swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="66" width="343" height="46"/>
@@ -148,6 +151,9 @@
                                         <state key="normal" title="Womens">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onWomenTap:" destination="qa7-oC-PdD" eventType="touchUpInside" id="90o-Uq-2HU"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="659-b6-tJH" customClass="BorderButton" customModule="gpcoders_swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="132" width="343" height="46"/>
@@ -159,10 +165,13 @@
                                         <state key="normal" title="Co-ed">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onCoedTap:" destination="qa7-oC-PdD" eventType="touchUpInside" id="7lV-em-aQd"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vuv-HR-pfk" customClass="BorderButton" customModule="gpcoders_swoosh" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vuv-HR-pfk" customClass="BorderButton" customModule="gpcoders_swoosh" customModuleProvider="target">
                                 <rect key="frame" x="16" y="601" width="343" height="46"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.40328017980000003" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -209,6 +218,7 @@
                         <viewLayoutGuide key="safeArea" id="Bzb-GU-zsS"/>
                     </view>
                     <connections>
+                        <outlet property="nextBtn" destination="vuv-HR-pfk" id="FjI-Ko-LIF"/>
                         <segue destination="bss-je-FWL" kind="show" identifier="skillVCSegue" id="DDg-Bh-Ree"/>
                     </connections>
                 </viewController>
